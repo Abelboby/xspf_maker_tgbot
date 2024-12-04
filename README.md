@@ -23,14 +23,15 @@ A sophisticated Telegram bot that streamlines video file management and streamin
 
 ## Demo
 
+### Bot Interaction in Telegram
+<video controls src="bot_interaction.mp4" title="Title"></video>
+
 ### File Search Interface
-<video controls src="Desktop 2024.12.04 - 12.56.37.03.mp4" title="Title"></video>
+<video controls src="file_search.mp4" title="Title"></video>
 
 ### XSPF Playlist Generation
-<video controls src="Desktop 2024.12.04 - 13.01.08.04.mp4" title="Title"></video>
+<video controls src="xspf_generation.mp4" title="Title"></video>
 
-### Bot Interaction in Telegram
-<video controls src="Desktop 2024.12.04 - 12.55.46.02.mp4" title="Title"></video>
 
 ## Technical Architecture
 
