@@ -103,7 +103,3 @@ Telegram Bot (app.py)
 - [ ] Enhanced file preview capabilities
 - [ ] Multi-cloud storage support
 - [ ] Advanced search and filtering
-
-## Contributions
-
-Contributions are welcome! Please read the contributing guidelines and submit pull requests.
