@@ -1,20 +1,35 @@
-# Use an official Python runtime as a parent image
-FROM python:3.11-slim
+# Directory structure:
+# project_root/
+# ├── Dockerfile
+# ├── docker-compose.yml
+# ├── requirements.txt
+# ├── app.py
+# ├── upload.py
+# └── .env
 
-# Set the working directory in the container
-WORKDIR /usr/src/app
+# Dockerfile
+FROM python:3.9-slim
 
-# Copy the current directory contents into the container at /usr/src/app
-COPY app.py .
-COPY upload.py .
-COPY apikeys.json .
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements file
 COPY requirements.txt .
 
-# Install any needed packages specified in requirements.txt
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 8080 available to the world outside this container
-EXPOSE 8080
+# Copy application files
+COPY . .
 
-# Run bot.py when the container launches
-CMD ["python", "./app.py"]
+# Command to run the application
+CMD ["python", "app.py"]
