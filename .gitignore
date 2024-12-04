@@ -1,7 +1,6 @@
 .env
 upload1.py
 __pycache__
-docker-compose.yml
 runtime.txt
 Dockerfile
 vercel.json

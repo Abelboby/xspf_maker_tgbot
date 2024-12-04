@@ -21,16 +21,16 @@ A sophisticated Telegram bot that streamlines video file management and streamin
   - Enable streaming of large video files
   - Cross-platform compatibility
 
-## Screenshots
+## Demo
 
 ### File Search Interface
-![File Search](screenshots/file_search.gif)
+<video controls src="Desktop 2024.12.04 - 12.56.37.03.mp4" title="Title"></video>
 
 ### XSPF Playlist Generation
-![XSPF Generation](screenshots/xspf_generation.gif)
+<video controls src="Desktop 2024.12.04 - 13.01.08.04.mp4" title="Title"></video>
 
 ### Bot Interaction in Telegram
-![Telegram Interaction](screenshots/telegram_interaction.gif)
+<video controls src="Desktop 2024.12.04 - 12.55.46.02.mp4" title="Title"></video>
 
 ## Technical Architecture
 
